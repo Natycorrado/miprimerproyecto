@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/4db763350b.js" crossorigin="anonymous"></script>
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link href = "https://fonts.googleapis.com/css2? family = Grandstander: wght @ 800 & family = Roboto: wght @ 500 & display = swap" rel = "stylesheet">
+<link href="style.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container inicio" id="introduccion">
+        <ul class="nav justify-content-end">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Iniciar Sesion
+            </a>
+            <div class="form-inline" aria-labelledby="navbarDropdownMenuLink">          
+              <form class="dropdown-menu p-4">
+                <div class="form-group">
+                  <label for="exampleDropdownFormEmail2">Usuario  </label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="exampleDropdownFormPassword2">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="">
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                    <label class="form-check-label" for="dropdownCheck2">
+                      Recordar contraseña
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+              </form>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ayuda</a>
+          </li>      
+          <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand"></a>
+            <form class="form-inline ">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn buscar" type="submit">Buscar</button>
+            </form>
+          </nav>
+          <button  type="button" class="btn btn-light ">
+          <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+          </svg>
+          </button>
+       </ul>
+      </div>
+    
+    <div class="container-fluid">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">  
+              <img src="img e-commerce\container1.jpg" class="d-block w-100" alt="..."style="height: 340px;" >
+            </div>
+            <div class="carousel-item"> 
+              <img src="img e-commerce\container2.jpg" class="d-block w-100" alt="..."style="height: 340px;" >
+            </div>
+            <div class="carousel-item">
+              <img src="img e-commerce/container3.jpg" class="d-block w-100" alt="..."style="height: 340px;">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+     </div>
+      </div>
+      </div>
+     
+    <div class="">
+        <nav>
+          <div class="nav nav-tabs mt-2 inicio" id="nav-tab" role="tablist">
+            <a class="nav-link active" id="nav-acuarela-tab" data-toggle="tab" href="#nav-acuarela" role="tab" aria-controls="nav-acuarela" aria-selected="true">Acuarela</a>
+            <a class="nav-link" id="nav-Botellas-tab" data-toggle="tab" href="#nav-botellas" role="tab" aria-controls="nav-botellas" aria-selected="false">Botellas</a>
+            <a class="nav-link" id="nav-mandalas-tab" data-toggle="tab" href="#nav-mandalas" role="tab" aria-controls="nav-mandalas" aria-selected="false">Mandalas</a>
+            <a class="nav-link" id="nav-empotrados-tab" data-toggle="tab" href="#nav-empotrados" role="tab" aria-controls="nav-empotrados" aria-selected="false">Empotrados</a>
+            <a class="nav-link" id="nav-cuadernos-tab" data-toggle="tab" href="#nav-cuadernos" role="tab" aria-controls="nav-cuadernos" aria-selected="false">Cuadernos</a>
+            <a class="nav-link" id="nav-cajas-tab" data-toggle="tab" href="#nav-cajas" role="tab" aria-controls="nav-cajas" aria-selected="false">Cajas</a>
+            <a class="nav-link" id="nav-Frascos-tab" data-toggle="tab" href="#nav-frascos" role="tab" aria-controls="nav-frascos" aria-selected="false">Frascos</a>
+            <a class="nav-link" id="nav-Personalizados-tab" data-toggle="tab" href="#nav-personalizados" role="tab" aria-controls="nav-personalizados" aria-selected="false">Personalizados</a>
+          </div>
+        </nav>
+    
+        <div class="tab-content ventas" id="nav-tabContent">
+          <div class="tab-pane fade show active opciones" id="nav-acuarela" role="tabpanel" aria-labelledby="nav-acuarela-tab">
+            <div class="row mt-3">
+              <div class="col md-4 mb-4">
+                <div class="card-deck">
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_170856637.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sé feliz</h5>
+                      <p class="card-text">Cuadro de 20x20, con base en acrilico blanco y flores pintadas con acuarela</p>
+                      <a href="#" class="btn btn-primary   comprar">Comprar!</a>  
+                    </div>
+                  </div>
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_170910694.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Corona de flores</h5>
+                      <p class="card-text">Cuadro de 20x20, con base de acrilico blanco y corona pintadaa con acuarela</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>
+                    </div>
+                  </div>
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_170923157.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Taza con suculentas </h5>
+                      <p class="card-text">Cuadro de 20x20, pintado con base de acrilico blanco y diseño pintado con acuarela</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>
+                    </div>
+                  </div>
+                </div>            
+              </div>
+            </div>
+          </div>
+    
+          <div class="tab-pane fade opciones" id="nav-botellas" role="tabpanel" aria-labelledby="nav-botellas-tab">
+            <div class="row mt-3">
+              <div class="col md-4 mb-4">
+                <div class="card-deck">
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171212505.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Botella puntillismo</h5>
+                      <p class="card-text">Botella de 1lt. con mandala realizado en metodo de puntillismo</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>  
+                    </div>
+                  </div>
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171225329.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Botella flores</h5>
+                      <p class="card-text">Botella de 1lt. decoradora con flores de goma eva</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>
+                    </div>
+                  </div>
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171238246.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Botella oxidada</h5>
+                      <p class="card-text">Botella de 1lt. con efecto oxidado</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>
+                    </div>
+                  </div>
+                </div>            
+              </div>
+            </div>        
+          </div>
+    
+          <div class="tab-pane fade opciones2" id="nav-mandalas" role="tabpanel" aria-labelledby="nav-mandalas-tab">
+            <div class="row mt-3">
+              <div class="col md-4 mb-4">
+                <div class="card-deck">
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171415991.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mandala color</h5>
+                      <p class="card-text">Mandala de 40x40 </p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>  
+                    </div>
+                  </div>
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171422568.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mandala oxido</h5>
+                      <p class="card-text">Mandala de 60x60</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>
+                    </div>
+                  </div>              
+                </div>            
+              </div>
+            </div>          
+          </div>
+           
+          <div class="tab-pane fade opciones2" id="nav-empotrados" role="tabpanel" aria-labelledby="nav-empotrados-tab">
+            <div class="row mt-3">
+              <div class="col md-4 mb-4">
+                <div class="card-deck">
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171551576.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Africana</h5>
+                      <p class="card-text">Cuadro de 60x40 con tecnicas hechas en puntillismo</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>  
+                    </div>
+                  </div>
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171522811.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Chica Azul</h5>
+                      <p class="card-text">Empotrado de 60x60</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>
+                    </div>
+                  </div>             
+                </div>            
+              </div>
+            </div>  
+          </div>
+    
+          <div class="tab-pane fade opciones2" id="nav-cuadernos" role="tabpanel" aria-labelledby="nav-cuadernos-tab">
+            <div class="row mt-3">
+              <div class="col md-4 mb-4">
+                <div class="card-deck">
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171333931.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cuaderno Mandala</h5>
+                      <p class="card-text">Cuaderno de 30x20 con mandala tejido</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>  
+                    </div>
+                  </div>
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171346830.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cuaderno Oxido</h5>
+                      <p class="card-text">cuaderno de 30x20 con efecto oxido</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>
+                    </div>
+                  </div>              
+                </div>            
+              </div>
+            </div>  
+          </div>
+    
+          <div class="tab-pane fade opciones" id="nav-cajas" role="tabpanel" aria-labelledby="nav-cajas-tab">
+            <div class="row mt-3">
+              <div class="col md-4 mb-4">
+                <div class="card-deck">
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171122615.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> Caja  de té amarilla</h5>
+                      <p class="card-text">caja con 4 separaciones con detalles de piedras doradas.</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>  
+                    </div>
+                  </div>
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171109883.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Caja pajaritos</h5>
+                      <p class="card-text">caja de té con 12 separaciones con detalles hechos en porcelana</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>
+                    </div>
+                  </div>
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171025619.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Caja</h5>
+                      <p class="card-text">Caja base con detalles hecho con servilleta</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>
+                    </div>
+                  </div>
+                </div>            
+              </div>
+            </div>  
+          </div>
+    
+          <div class="tab-pane fade opciones2" id="nav-frascos" role="tabpanel" aria-labelledby="nav-frascos-tab">
+            <div class="row mt-3">
+              <div class="col md-4 mb-5">
+                <div class="card-deck">
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171817668.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Frasco Pajaro</h5>
+                      <p class="card-text">Frasco con detalles en porcelana y puntillas.</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>  
+                    </div>
+                  </div>
+                  <div class="card carta">
+                    <img src="img e-commerce\IMG_20200819_171756652.jpg" class="card-img-top img2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Frasco Mariposa</h5>
+                      <p class="card-text">Frasco con detalles con stencils y porcelana.</p>
+                      <a href="#" class="btn btn-primary comprar">Comprar!</a>
+                    </div>
+                  </div>              
+                </div>            
+              </div>
+            </div>  
+          </div>
+    
+          <div class="tab-pane fade " id="nav-personalizados" role="tabpanel" aria-labelledby="nav-personalizados-tab">       
+            <div class=" row formulario">
+              <form class="needs-validation" novalidate>
+                <div class="row">
+                <h6>Complete el siguiente formulario para que podamos comunicarnos a la brevedad y contarnos cuales son sus ideas </h6>
+                </div>          
+                <div class="form-row">
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom01">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>              
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom02">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required>              
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom03">E-MAIL</label>
+                    <input type="email" class="form-control" id="validationCustom03" required>              
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom03">Número de celular</label>
+                    <input type="number" class="form-control" id="validationCustom03" required>              
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="exampleFormControlTextarea1">Describa el trabajo que quiere personalizado</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                  </div>            
+                </div>
+               
+                <button class="btn btn-primary comprar" type="submit">Enviar!</button>
+              </form>
+              
+              <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+              </script>
+            </div>
+    
+          </div>
+        </div>
+    
+        
+    
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container"> 
+        <div class="row">
+          <div class="col">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active footer" href="#">Preguntas frecuentes</a>
+              </li>    
+              <li class="nav-item">
+                 <a class="nav-link active footer" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active footer" href="#">Info del envio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active footer" href="#">Medios de Pago</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+             <p class="footer">Siguenos en:</p>
+             <a class="nav-link active footer" href="#">           
+               <i class="fab fa-instagram fa-2x"></i>
+             </a>
+             <a class="nav-link active footer" href="#">
+               <i class="fab fa-facebook fa-2x"></i>       
+             </a>
+          </div>
+        </div>   
+       <b>
+         <p>&copy;2020 Naty C.</p>
+       </b> 
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.inicio{
+    font-family:'Grandstander', cursive ;
+    color: black;
+  }
+  
+  
+  .img2 {
+      width:250px;
+      height:250px;
+      margin-right:0px
+    }
+    .opciones{
+      width:815px;
+     
+    }
+    .opciones2{
+      width: 534px;
+    }
+   .carta{
+       border-color:black;
+       height: auto;
+       border-radius:3px;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+       
+               
+   } 
+   .formulario{
+     justify-content: center;
+     margin-top: 20px;
+     margin-bottom: 30px;
+   }
+  
+   p{font-family:  'Roboto', sans-serif;
+    
+  }
+  h5{font-family: 'Grandstander', cursive;
+  
+  
+   }
+  .footer{
+    font-family:'Grandstander', cursive ;
+    font-size:25px;
+    color:rgb(153, 153, 255);
+    font-size:17px;
+  }
+  .footer:hover{
+    color: black
+  }
+  .comprar{
+    background-color: white;
+    color:black; 
+    border-color: black;
+    transition: all 50ms;
+  }
+  .comprar:hover{
+    color:white;
+    background-color:black;
+    border-color:black;
+    transform: scaleX(1.2) 
+}
+  
+  .ventas{
+    background-image:linear-gradient(#ddccff, #9966ff);
+    padding-top:3px;
+    padding-left:3px;
+    padding-bottom:1px;
+  }
+  .buscar{
+    background-color: white;
+    color:black;
+    border:solid 1.5px;
+  }
+  .buscar:hover{
+    background-color: black;
+    color:white;
+  }
+    
